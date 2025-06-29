@@ -327,6 +327,14 @@ Each category has standout performers:
  Specialty: BBQ Chicken, Supreme, Hawaiian
 Each generated over $13,000, highlighting their popularity and profitability.
 
+&nbsp;
+&nbsp;
+&nbsp;
+
+_All visualizations in this project were generated with the help of ChatGPT using Python libraries like Matplotlib and Seaborn. This ensured consistent styling, accurate insights, and efficient analysis presentation._
+
+
+
 
 
 
