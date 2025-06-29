@@ -67,7 +67,8 @@ FROM orders;
 ![image](https://github.com/user-attachments/assets/645ddae7-96cb-46a8-8f68-dd50485dfd6e)
 
 
-A total of 2,137 orders were placed, reflecting steady customer demand across the dataset.
+
+A total of 21,350 orders were placed, reflecting steady customer demand across the dataset.
 This indicates consistent traffic and strong customer engagement over the recorded period.
 
 
@@ -83,6 +84,10 @@ JOIN pizzas ON order_details.pizza_id = pizzas.pizza_id;
 ![image](https://github.com/user-attachments/assets/48fa62b1-d6a0-4750-bdfc-4e6b3084d9bd)
 
 
+The business earned approximately $817,860 in total revenue from pizza sales.
+This figure reflects cumulative income from all pizza orders including various sizes and types.
+
+
 ### 3. Highest Priced Pizza
 Identifies the most expensive pizza based on price.
 ```sql
@@ -93,6 +98,9 @@ LIMIT 1;
 ```
 
 ![image](https://github.com/user-attachments/assets/8a6a774a-ce29-4e84-bea0-1340ae6e3b6f)
+
+The Greek Pizza (XXL) is the most expensive item on the menu at $35.95.
+Such premium options suggest a tiered pricing strategy targeting diverse spending preferences.
 
 
 ### 4. Most Common Pizza Size Ordered
