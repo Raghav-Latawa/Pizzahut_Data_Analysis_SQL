@@ -121,6 +121,10 @@ LIMIT 1;
 ![image](https://github.com/user-attachments/assets/7d674213-0962-4262-be58-4676632b0f72)
 
 &nbsp;
+&nbsp;
+
+![image](https://github.com/user-attachments/assets/b4316a64-4649-42b5-97ab-345713eab84c)
+&nbsp;
 
  The most popular size among customers is Large, dominating overall pizza sales.
  
@@ -169,7 +173,7 @@ GROUP BY pt.category;
 
 &nbsp;
 
-The Classic category led in sales volume, followed by Specialty and Veggie categories.
+The Classic category led in sales volume, followed by Supreme and Veggie categories.
 
 &nbsp;
 
