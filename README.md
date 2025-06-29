@@ -73,6 +73,8 @@ FROM orders;
 
 
 &nbsp;
+
+
  ### 2. Total Revenue Generated from Pizza Sales
 Calculates the total revenue by multiplying quantity and price for each pizza.
 ```sql
@@ -101,7 +103,9 @@ LIMIT 1;
 ![image](https://github.com/user-attachments/assets/7214f8b1-ad00-4ee4-8e92-d29c19472ccc)
 
 &nbsp;
+
  The Greek Pizza (XXL) is the most expensive item on the menu at $35.95.
+ 
  &nbsp;
 
 ### 4. Most Common Pizza Size Ordered
@@ -119,6 +123,7 @@ LIMIT 1;
 &nbsp;
 
  The most popular size among customers is Large, dominating overall pizza sales.
+ 
  &nbsp;
 
 
