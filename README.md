@@ -72,7 +72,7 @@ FROM orders;
  A total of 21,350 orders were placed, reflecting steady customer demand across the dataset.
 
 
-
+&nbsp;
  ### 2. Total Revenue Generated from Pizza Sales
 Calculates the total revenue by multiplying quantity and price for each pizza.
 ```sql
@@ -87,7 +87,7 @@ JOIN pizzas ON order_details.pizza_id = pizzas.pizza_id;
 
 he business earned approximately $817,860 in total revenue from pizza sales.
 
-
+&nbsp;
 
 ### 3. Highest Priced Pizza
 Identifies the most expensive pizza based on price.
@@ -98,7 +98,11 @@ ORDER BY price DESC
 LIMIT 1;
 ```
 
+![image](https://github.com/user-attachments/assets/7214f8b1-ad00-4ee4-8e92-d29c19472ccc)
+
+&nbsp;
  The Greek Pizza (XXL) is the most expensive item on the menu at $35.95.
+ &nbsp;
 
 ### 4. Most Common Pizza Size Ordered
 Finds out which pizza size is ordered the most.
@@ -115,6 +119,7 @@ LIMIT 1;
 &nbsp;
 
  The most popular size among customers is Large, dominating overall pizza sales.
+ &nbsp;
 
 
 
@@ -136,7 +141,7 @@ LIMIT 5;
 
  The five most frequently ordered pizzas include Pepperoni, BBQ Chicken, Margherita, Hawaiian, and Veggie Lovers,each sold over 800 units, showcasing their consistent appeal to the customer base.
 
-
+&nbsp;
 
 ### 6. Total Quantity per Pizza Category
 Shows how many pizzas were ordered in each category.
@@ -154,7 +159,7 @@ GROUP BY pt.category;
 
 The Classic category led in sales volume, followed by Specialty and Veggie categories.
 
-
+&nbsp;
 
 ### 7. Order Distribution by Hour
 Helps understand customer ordering behavior over the day.
@@ -171,7 +176,7 @@ ORDER BY order_hour;
 
 
 Peak order times are around 12 PM (lunch) and 7 PM (dinner), reflecting a typical consumer behavior, with traffic highest during major mealtimes.
-
+&nbsp;
 
 
 ### 8. Category-wise Pizza Distribution
@@ -190,7 +195,7 @@ GROUP BY pt.category;
 
  Out of all pizzas, there are 10 Classic, 8 Specialty, and 7 Veggie types available.This shows a balanced menu with a slight edge toward classic offerings.
 
-
+&nbsp;
 
 
 ### 9. Average Pizzas Ordered Per Day
@@ -212,6 +217,8 @@ GROUP BY date;
 
 An average of 138 pizzas are sold per day, based on total quantity grouped by order date.
 
+&nbsp;
+
 
 ### 10. Top 3 Most Ordered Pizza Types by Revenue
 Ranks pizza types based on revenue.
@@ -229,7 +236,7 @@ LIMIT 3;
 &nbsp;
 
 The highest revenue-generating pizzas are Classic Pepperoni, BBQ Chicken, and Supreme Pizza, with individual revenues above $14,000.
-
+&nbsp;
 
 ### 11. Percentage Revenue Contribution per Pizza Type
 Calculates each pizza type’s contribution to the total revenue.
@@ -253,7 +260,7 @@ ORDER BY revenue_percentage DESC;
 &nbsp;
 
 epperoni leads with ~23% of total revenue, followed by BBQ Chicken (~20.5%), Supreme (~19.7%), Veggie Lovers (~19%), and Cheese (~18.3%), collectively accounting for over 100% due to rounding in stacked contributions.
-
+&nbsp;
 
 
 ### 12. Cumulative Revenue Over Time
@@ -276,6 +283,7 @@ ORDER BY date;
 
 Revenue shows a steady upward trend, surpassing $800,000 by the dataset’s end.This growth curve demonstrates consistent sales and business scalability.
 
+&nbsp;
 
 ### 13. Top 3 Revenue-Generating Pizzas by Category
 Ranks the top 3 pizzas by revenue within each category.
