@@ -53,5 +53,20 @@ Seaborn – For statistical and aesthetically enhanced visualizations.
 
 
 
+# The Analysis
+
+### 1. Total Number of Orders Placed
+This query counts how many unique orders were placed.
+```sql
+SELECT COUNT(DISTINCT order_id) AS total_orders
+FROM orders;
+
+
+
+
+
+
+
+
 
 
