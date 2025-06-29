@@ -161,6 +161,13 @@ GROUP BY pt.category;
 ![image](https://github.com/user-attachments/assets/d2783da6-8d4c-4353-8829-6679a5459ff1)
 
 &nbsp;
+&nbsp;
+
+
+![image](https://github.com/user-attachments/assets/e81e2bd5-f541-4a76-ab62-fcdb92e62478)
+
+
+&nbsp;
 
 The Classic category led in sales volume, followed by Specialty and Veggie categories.
 
@@ -178,7 +185,11 @@ ORDER BY order_hour;
 ![image](https://github.com/user-attachments/assets/7e6dd247-974d-4fec-aafb-1c14832e6680)
 
 &nbsp;
+&nbsp;
 
+![image](https://github.com/user-attachments/assets/ab685d6e-b4df-467f-ab82-a5d2ac6beb4c)
+
+&nbsp;
 
 Peak order times are around 12 PM (lunch) and 7 PM (dinner), reflecting a typical consumer behavior, with traffic highest during major mealtimes.
 &nbsp;
