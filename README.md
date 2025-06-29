@@ -276,6 +276,11 @@ ORDER BY revenue_percentage DESC;
 ```
 
 ![image](https://github.com/user-attachments/assets/fa400dda-059e-4b14-bd3f-e76e98b30651)
+&nbsp;
+&nbsp;
+
+![image](https://github.com/user-attachments/assets/287a3c1a-24ec-4102-99b4-a01cfe605d9f)
+
 
 &nbsp;
 
