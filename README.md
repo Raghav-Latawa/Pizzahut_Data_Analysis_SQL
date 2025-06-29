@@ -1,6 +1,6 @@
 # INTRODUCTION
 
-This project focuses on analyzing a pizza sales dataset to uncover key business insights using SQL and data visualization tools. The dataset consists of four CSV files: orders, order_details, pizzas, and pizza_types, each containing crucial information about sales transactions, pizza types, pricing, and order metadata.
+This project focuses on analyzing a pizza sales dataset to uncover key business insights using SQL and visualisation. The dataset consists of four CSV files: orders, order_details, pizzas, and pizza_types, each containing crucial information about sales transactions, pizza types, pricing, and order metadata.
 
 The main goals of the analysis are to:
 
@@ -62,7 +62,16 @@ This query counts how many unique orders were placed.
 ```sql
 SELECT COUNT(DISTINCT order_id) AS total_orders
 FROM orders;
-``` 
+```
+
+![image](https://github.com/user-attachments/assets/645ddae7-96cb-46a8-8f68-dd50485dfd6e)
+
+
+A total of 2,137 orders were placed, reflecting steady customer demand across the dataset.
+This indicates consistent traffic and strong customer engagement over the recorded period.
+
+
+
  ### 2. Total Revenue Generated from Pizza Sales
 Calculates the total revenue by multiplying quantity and price for each pizza.
 ```sql
@@ -70,6 +79,9 @@ SELECT ROUND(SUM(order_details.quantity * pizzas.price), 2) AS total_revenue
 FROM order_details
 JOIN pizzas ON order_details.pizza_id = pizzas.pizza_id;
 ```
+
+![image](https://github.com/user-attachments/assets/48fa62b1-d6a0-4750-bdfc-4e6b3084d9bd)
+
 
 ### 3. Highest Priced Pizza
 Identifies the most expensive pizza based on price.
@@ -79,6 +91,9 @@ FROM pizzas
 ORDER BY price DESC
 LIMIT 1;
 ```
+
+![image](https://github.com/user-attachments/assets/8a6a774a-ce29-4e84-bea0-1340ae6e3b6f)
+
 
 ### 4. Most Common Pizza Size Ordered
 Finds out which pizza size is ordered the most.
@@ -90,6 +105,11 @@ GROUP BY size
 ORDER BY total_orders DESC
 LIMIT 1;
 ```
+![image](https://github.com/user-attachments/assets/7d674213-0962-4262-be58-4676632b0f72)
+
+
+
+
 
 ### 5. Top 5 Most Ordered Pizza Types
 Displays the top 5 pizza types based on total quantity ordered.
@@ -102,6 +122,9 @@ GROUP BY pt.name
 ORDER BY total_quantity DESC
 LIMIT 5;
 ```
+![image](https://github.com/user-attachments/assets/7e69c226-2b33-439d-b557-3ef8dd8b764a)
+
+
 
 ### 6. Total Quantity per Pizza Category
 Shows how many pizzas were ordered in each category.
@@ -113,6 +136,11 @@ JOIN pizza_types pt ON p.pizza_type_id = pt.pizza_type_id
 GROUP BY pt.category;
 ```
 
+![image](https://github.com/user-attachments/assets/d2783da6-8d4c-4353-8829-6679a5459ff1)
+
+
+
+
 
 ### 7. Order Distribution by Hour
 Helps understand customer ordering behavior over the day.
@@ -123,6 +151,11 @@ GROUP BY order_hour
 ORDER BY order_hour;
 ```
 
+![image](https://github.com/user-attachments/assets/7e6dd247-974d-4fec-aafb-1c14832e6680)
+
+
+
+
 ### 8. Category-wise Pizza Distribution
 Shows how pizzas are distributed across categories.
 ```sql
@@ -131,6 +164,9 @@ FROM pizza_types pt
 JOIN pizzas p ON pt.pizza_type_id = p.pizza_type_id
 GROUP BY pt.category;
 ```
+
+![image](https://github.com/user-attachments/assets/4d559802-1622-4abb-8590-dc2f67cc8b1e)
+
 
 
 ### 9. Average Pizzas Ordered Per Day
@@ -146,6 +182,8 @@ FROM (
 GROUP BY date;
 ```
 
+
+
 ### 10. Top 3 Most Ordered Pizza Types by Revenue
 Ranks pizza types based on revenue.
 ```sql
@@ -157,6 +195,8 @@ GROUP BY pt.name
 ORDER BY revenue DESC
 LIMIT 3;
 ```
+![image](https://github.com/user-attachments/assets/929c395d-1b61-42f9-818a-8ce4ae99d2bd)
+
 
 ### 11. Percentage Revenue Contribution per Pizza Type
 Calculates each pizza type’s contribution to the total revenue.
@@ -175,6 +215,10 @@ FROM revenue_cte
 ORDER BY revenue_percentage DESC;
 ```
 
+![image](https://github.com/user-attachments/assets/fa400dda-059e-4b14-bd3f-e76e98b30651)
+
+
+
 ### 12. Cumulative Revenue Over Time
 Tracks total revenue growth day by day.
 ```sql
@@ -187,6 +231,10 @@ JOIN pizzas p ON od.pizza_id = p.pizza_id
 GROUP BY date
 ORDER BY date;
 ```
+
+
+![image](https://github.com/user-attachments/assets/f305b88b-7fa0-4244-bd88-a16cb889aad2)
+
 
 ### 13. Top 3 Revenue-Generating Pizzas by Category
 Ranks the top 3 pizzas by revenue within each category.
@@ -211,6 +259,9 @@ FROM (
 ) AS ranked_pizzas
 WHERE rn <= 3;
 ```
+
+![image](https://github.com/user-attachments/assets/bd35c0c5-cbfc-4398-8870-cb6c35066e6b)
+
 
 
 
