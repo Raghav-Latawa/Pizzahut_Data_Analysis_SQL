@@ -50,9 +50,7 @@ GitHub – To host and share code, queries, visualizations, and documentation.
 
 Excel / Google Sheets – For initial data cleaning, exploration, and CSV inspection.
 
-Matplotlib – To create visualizations such as line plots and bar charts.
 
-Seaborn – For statistical and aesthetically enhanced visualizations.
 
 
 
