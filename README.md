@@ -68,8 +68,7 @@ FROM orders;
 
 
 
-A total of 21,350 orders were placed, reflecting steady customer demand across the dataset.
-This indicates consistent traffic and strong customer engagement over the recorded period.
+### A total of 21,350 orders were placed, reflecting steady customer demand across the dataset.
 
 
 
@@ -84,8 +83,8 @@ JOIN pizzas ON order_details.pizza_id = pizzas.pizza_id;
 ![image](https://github.com/user-attachments/assets/48fa62b1-d6a0-4750-bdfc-4e6b3084d9bd)
 
 
-The business earned approximately $817,860 in total revenue from pizza sales.
-This figure reflects cumulative income from all pizza orders including various sizes and types.
+### The business earned approximately $817,860 in total revenue from pizza sales.
+
 
 
 ### 3. Highest Priced Pizza
@@ -97,11 +96,7 @@ ORDER BY price DESC
 LIMIT 1;
 ```
 
-![image](https://github.com/user-attachments/assets/8a6a774a-ce29-4e84-bea0-1340ae6e3b6f)
-
-The Greek Pizza (XXL) is the most expensive item on the menu at $35.95.
-Such premium options suggest a tiered pricing strategy targeting diverse spending preferences.
-
+### The Greek Pizza (XXL) is the most expensive item on the menu at $35.95.
 
 ### 4. Most Common Pizza Size Ordered
 Finds out which pizza size is ordered the most.
@@ -115,7 +110,7 @@ LIMIT 1;
 ```
 ![image](https://github.com/user-attachments/assets/7d674213-0962-4262-be58-4676632b0f72)
 
-
+### The most popular size among customers is Large, dominating overall pizza sales.
 
 
 
@@ -132,6 +127,8 @@ LIMIT 5;
 ```
 ![image](https://github.com/user-attachments/assets/7e69c226-2b33-439d-b557-3ef8dd8b764a)
 
+### The five most frequently ordered pizzas include Pepperoni, BBQ Chicken, Margherita, Hawaiian, and Veggie Lovers,each sold over 800 units, showcasing their consistent appeal to the customer base.
+
 
 
 ### 6. Total Quantity per Pizza Category
@@ -147,6 +144,7 @@ GROUP BY pt.category;
 ![image](https://github.com/user-attachments/assets/d2783da6-8d4c-4353-8829-6679a5459ff1)
 
 
+### The Classic category led in sales volume, followed by Specialty and Veggie categories.
 
 
 
@@ -161,6 +159,7 @@ ORDER BY order_hour;
 
 ![image](https://github.com/user-attachments/assets/7e6dd247-974d-4fec-aafb-1c14832e6680)
 
+### Peak order times are around 12 PM (lunch) and 7 PM (dinner), reflecting a typical consumer behavior, with traffic highest during major mealtimes.
 
 
 
@@ -176,6 +175,10 @@ GROUP BY pt.category;
 ![image](https://github.com/user-attachments/assets/4d559802-1622-4abb-8590-dc2f67cc8b1e)
 
 
+### Out of all pizzas, there are 10 Classic, 8 Specialty, and 7 Veggie types available.This shows a balanced menu with a slight edge toward classic offerings.
+
+
+
 
 ### 9. Average Pizzas Ordered Per Day
 Calculates the average number of pizzas ordered daily.
@@ -189,7 +192,10 @@ FROM (
 ) AS daily_orders
 GROUP BY date;
 ```
+![image](https://github.com/user-attachments/assets/bfbaf83e-9353-4ed9-9005-ed86a3615d67)
 
+
+### An average of 138 pizzas are sold per day, based on total quantity grouped by order date.
 
 
 ### 10. Top 3 Most Ordered Pizza Types by Revenue
@@ -204,6 +210,8 @@ ORDER BY revenue DESC
 LIMIT 3;
 ```
 ![image](https://github.com/user-attachments/assets/929c395d-1b61-42f9-818a-8ce4ae99d2bd)
+
+### The highest revenue-generating pizzas are Classic Pepperoni, BBQ Chicken, and Supreme Pizza, with individual revenues above $14,000.
 
 
 ### 11. Percentage Revenue Contribution per Pizza Type
@@ -225,6 +233,8 @@ ORDER BY revenue_percentage DESC;
 
 ![image](https://github.com/user-attachments/assets/fa400dda-059e-4b14-bd3f-e76e98b30651)
 
+### Pepperoni leads with ~23% of total revenue, followed by BBQ Chicken (~20.5%), Supreme (~19.7%), Veggie Lovers (~19%), and Cheese (~18.3%), collectively accounting for over 100% due to rounding in stacked contributions.
+
 
 
 ### 12. Cumulative Revenue Over Time
@@ -242,6 +252,8 @@ ORDER BY date;
 
 
 ![image](https://github.com/user-attachments/assets/f305b88b-7fa0-4244-bd88-a16cb889aad2)
+
+### Revenue shows a steady upward trend, surpassing $800,000 by the dataset’s end.This growth curve demonstrates consistent sales and business scalability.
 
 
 ### 13. Top 3 Revenue-Generating Pizzas by Category
@@ -269,6 +281,15 @@ WHERE rn <= 3;
 ```
 
 ![image](https://github.com/user-attachments/assets/bd35c0c5-cbfc-4398-8870-cb6c35066e6b)
+
+### Each category has standout performers:
+
+### Classic: Pepperoni, Cheese, Margherita
+
+### Veggie: Veggie Lovers, Mushroom, Spinach
+
+### Specialty: BBQ Chicken, Supreme, Hawaiian
+### Each generated over $13,000, highlighting their popularity and profitability.
 
 
 
